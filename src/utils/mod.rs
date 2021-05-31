@@ -30,3 +30,44 @@ pub fn GeneratePercentageBar(percentage: i32) -> WinfetchResult<String> {
 
     Ok(percent_bar)
 }
+
+pub fn GetWindowsASCIIArt() -> String {
+    format!(
+        "{}34m                    ....,,:;+ccllll
+{}34m      ...,,+:;  cllllllllllllllllll
+{}34m,cclllllllllll  lllllllllllllllllll
+{}34mllllllllllllll  lllllllllllllllllll
+{}34mllllllllllllll  lllllllllllllllllll
+{}34mllllllllllllll  lllllllllllllllllll
+{}34mllllllllllllll  lllllllllllllllllll
+{}34mllllllllllllll  lllllllllllllllllll
+{}34m
+{}34mllllllllllllll  lllllllllllllllllll
+{}34mllllllllllllll  lllllllllllllllllll
+{}34mllllllllllllll  lllllllllllllllllll
+{}34mllllllllllllll  lllllllllllllllllll
+{}34mllllllllllllll  lllllllllllllllllll
+{}34m`'ccllllllllll  lllllllllllllllllll
+{}34m      `' \\\\*::  :ccllllllllllllllll
+{}34m                       ````''*::cll
+{}34m                                 ``",
+        ANSI_ESCAPE_SEQUENCE,
+        ANSI_ESCAPE_SEQUENCE,
+        ANSI_ESCAPE_SEQUENCE,
+        ANSI_ESCAPE_SEQUENCE,
+        ANSI_ESCAPE_SEQUENCE,
+        ANSI_ESCAPE_SEQUENCE,
+        ANSI_ESCAPE_SEQUENCE,
+        ANSI_ESCAPE_SEQUENCE,
+        ANSI_ESCAPE_SEQUENCE,
+        ANSI_ESCAPE_SEQUENCE,
+        ANSI_ESCAPE_SEQUENCE,
+        ANSI_ESCAPE_SEQUENCE,
+        ANSI_ESCAPE_SEQUENCE,
+        ANSI_ESCAPE_SEQUENCE,
+        ANSI_ESCAPE_SEQUENCE,
+        ANSI_ESCAPE_SEQUENCE,
+        ANSI_ESCAPE_SEQUENCE,
+        ANSI_ESCAPE_SEQUENCE
+    )
+}
