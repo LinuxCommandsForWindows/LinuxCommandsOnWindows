@@ -65,7 +65,7 @@ impl fmt::Display for ScreenResolution {
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
         let resolutions = self.Resolutions.iter().map(|(horizontal, vertical)| format!("{}x{}", horizontal, vertical)).collect::<Vec<_>>();
 
-        write!(f, "{}", resolutions.join(","))
+        write!(f, "{}", resolutions.join(", "))
     }
 }
 
