@@ -1,3 +1,5 @@
+#![feature(iter_advance_by)]
+
 use winfetch::{
     model::{
         graphicscard,
@@ -32,7 +34,7 @@ fn main() {
     let mut processor_usage = processorusage::ProcessorUsage::GetProcessorLoadPercentage().unwrap();
     processor_usage.GetProcessesCount().unwrap();
     let memory = memory::Memory::GetMemoryStatistics().unwrap();
-    let drives = storage::Storage::GetStorageStatistics().unwrap();
+    let mut drives = storage::Storage::GetStorageStatistics().unwrap();
 
     let mut lines = utils::GetWindowsASCIIArt().lines().map(|refstr| refstr.to_string()).collect::<Vec<String>>();
     lines[0].push_str(&format!("  {}", names));
@@ -47,6 +49,22 @@ fn main() {
     lines[8].push_str(&format!("                                     Processor{}0m: {}", utils::ANSI_ESCAPE_SEQUENCE, processor));
     lines[9].push_str(&format!("  Graphics Card(s){}0m: {}", utils::ANSI_ESCAPE_SEQUENCE, graphics_card));
     lines[10].push_str(&format!("  Memory{}0m: {}", utils::ANSI_ESCAPE_SEQUENCE, memory));
+
+    let mut iteration = 0;
+
+    for (index, _) in lines.clone().iter().enumerate() {
+        if drives.Drives.get(index - iteration).is_some() {
+            lines[11 + index].push_str(&format!(" {}", drives.Drives.remove(0)))
+        }
+
+        iteration += 1;
+    }
+
+    if !drives.Drives.is_empty() {
+        drives.Drives.into_iter().for_each(|drive| {
+            println!("                                  {}", drive)
+        });
+    }
 
     println!();
     lines.into_iter().for_each(|string| {
