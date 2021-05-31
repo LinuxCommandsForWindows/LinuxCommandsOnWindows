@@ -250,6 +250,6 @@ impl GraphicsCard {
 
 impl fmt::Display for GraphicsCard {
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
-        write!(f, "{}", self.Names.iter().map(|os_string| os_string.to_str().unwrap()).collect::<Vec<_>>().join(","))
+        write!(f, "{}", self.Names.iter().map(|os_string| os_string.to_str().unwrap()).collect::<Vec<_>>().join(", "))
     }
 }
