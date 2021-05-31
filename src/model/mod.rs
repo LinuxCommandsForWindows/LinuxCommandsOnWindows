@@ -2,6 +2,7 @@ pub mod graphicscard;
 pub mod hostsystem;
 pub mod memory;
 pub mod motherboard;
+pub mod names;
 pub mod os;
 pub mod processor;
 pub mod processorusage;
