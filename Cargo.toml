@@ -29,6 +29,7 @@ features = [
     "sysinfoapi",
     "tlhelp32",
     "wbemcli",
+    "winbase",
     "wingdi",
     "winnt",
     "winreg",
