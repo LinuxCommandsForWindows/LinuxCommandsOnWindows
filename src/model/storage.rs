@@ -65,7 +65,7 @@ use crate::{
 };
 
 pub struct Storage {
-    Drives: Vec<StorageDrive>
+    pub Drives: Vec<StorageDrive>
 }
 
 impl Storage {
@@ -371,9 +371,9 @@ impl fmt::Display for StorageDrive {
         let used = self.Size - self.FreeSpace;
         let total = self.Size;
 
-        writeln!(
+        write!(
             f,
-            "{}36m Drive ({}){}0m: {} {} / {}",
+            "{}34m Drive ({}){}0m: {} {} / {}",
             utils::ANSI_ESCAPE_SEQUENCE,
             self.DriveLetter.clone().into_string().unwrap(),
             utils::ANSI_ESCAPE_SEQUENCE,
@@ -383,4 +383,3 @@ impl fmt::Display for StorageDrive {
         )
     }
 }
-
