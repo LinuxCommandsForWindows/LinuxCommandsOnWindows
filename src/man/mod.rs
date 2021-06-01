@@ -13,7 +13,7 @@ pub fn GetManPagesDirectory() -> PathBuf {
         PathBuf::from(value)
     }
     else {
-        let path = env::current_dir().unwrap();
+        let path = env::current_exe().unwrap();
         let chars = path.to_str().unwrap().chars().collect::<Vec<_>>();
 
         PathBuf::from(format!("{}shares\\man", chars[0..=2].into_iter().collect::<String>()))
