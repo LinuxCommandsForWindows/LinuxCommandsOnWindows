@@ -1,3 +1,29 @@
+# Linux Commands for Windows 0.1.2 (01-06-2021)
+
+The third release!
+
+Only the target `x86_64-pc-windows-msvc` is supported for the commands as of now.
+
+## Added Commands
+
+### [`man` 0.1.0](https://github.com/LinuxCommandsForWindows/LinuxCommandsOnWindows/tree/main/src/man)
+
+`man` is the `man` command from Linux ported over to Windows.
+
+`man` already exists as a PowerShell Help Command - however I'd like to include it because at the end of
+the day we are porting Linux commands over, in which we will need to write the manual pages for it. So this
+is also a good inclusion.
+
+You should rename the executable file to `man` before adding it to the environment variables or adding it to
+your PowerShell profile - if you're using PowerShell; so that you don't have to type `man-x86_64-pc-windows-msvc`
+when you want to use `man`!
+
+## Updated Commands
+
+### [`whoami` 0.1.1](https://github.com/LinuxCommandsForWindows/LinuxCommandsOnWindows/tree/main/src/whoami)
+
+Updated some naming in the source code.
+
 # Linux Commands for Windows 0.1.1 (01-06-2021)
 
 The second release after the initial release!
