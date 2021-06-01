@@ -15,7 +15,7 @@ Options:
 
 Source code for this command: <https://github.com/LinuxCommandsForWindows/LinuxCommandsOnWindows/tree/main/src/whoami>";
 
-pub const WHOAMI_VERSION_MESSAGE: &str = r"whoami (Linux Commands for Windows) 0.1.0
+pub const WHOAMI_VERSION_MESSAGE: &str = r"whoami (Linux Commands for Windows) 0.1.1
 Copyright (c) 2021 Linux Commands for Windows Project Developers
 License Apache v2.0: <https://www.apache.org/licenses/LICENSE-2.0.txt>
 This is free software: you are free to modify and redistribute it.
