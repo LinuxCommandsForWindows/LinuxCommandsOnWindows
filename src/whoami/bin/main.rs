@@ -1,9 +1,9 @@
-use std::env as environment;
+use std::env;
 
 use linux_commands_on_windows::whoami;
 
 fn main() {
-    let mut commandline_arguments = environment::args();
+    let mut commandline_arguments = env::args();
 
     if let Some(argument) = commandline_arguments.nth(1) {
         match &*argument {
