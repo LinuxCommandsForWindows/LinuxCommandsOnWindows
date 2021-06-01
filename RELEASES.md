@@ -1,6 +1,6 @@
 # Linux Commands for Windows 0.1.3 (01-06-2021)
 
-The third release!
+The fourth release!
 
 Only the target `x86_64-pc-windows-msvc` is supported for the commands as of now.
 
