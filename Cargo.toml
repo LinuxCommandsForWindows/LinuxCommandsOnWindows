@@ -3,8 +3,6 @@ name = "linux-commands-on-windows"
 version = "0.1.0"
 edition = "2018"
 
-# winfetch
-
 [dependencies.chrono]
 version = "0.4.19"
 
@@ -35,6 +33,10 @@ features = [
     "winreg",
     "winuser"
 ]
+
+[[bin]]
+name = "whoami"
+path = "src/whoami/bin/main.rs"
 
 [[bin]]
 name = "winfetch"
