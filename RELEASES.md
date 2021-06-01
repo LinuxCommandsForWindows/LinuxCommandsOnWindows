@@ -1,3 +1,15 @@
+# Linux Commands for Windows 0.1.4 (01-06-2021)
+
+The fifth release!
+
+Only the target `x86_64-pc-windows-msvc` is supported for the commands as of now.
+
+## Updated Commands
+
+### [`winfetch` 0.1.1](https://github.com/LinuxCommandsForWindows/LinuxCommandsOnWindows/tree/main/src/man)
+
+Fixes an incorrect unit conversion bug.
+
 # Linux Commands for Windows 0.1.3 (01-06-2021)
 
 The fourth release!
