@@ -6,6 +6,7 @@ A series of commands ported to Windows because why not?
 | Command                                                                                                | Description                                         |
 | ------------------------------------------------------------------------------------------------------ | --------------------------------------------------- |
 | [`man`](https://github.com/LinuxCommandsForWindows/LinuxCommandsOnWindows/tree/main/src/man)           | `man` ported to Windows.                            |
+| [`pwd`](https://github.com/LinuxCommandsForWindows/LinuxCommandsOnWindows/tree/main/src/pwd)           | `pwd` ported to Windows.                            |
 | [`whoami`](https://github.com/LinuxCommandsForWindows/LinuxCommandsOnWindows/tree/main/src/whoami)     | `whoami` ported to Windows.                         |
 | [`winfetch`](https://github.com/LinuxCommandsForWindows/LinuxCommandsOnWindows/tree/main/src/winfetch) | A `neofetch`-like command line utility, on Windows. |
 
