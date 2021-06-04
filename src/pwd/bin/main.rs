@@ -12,7 +12,8 @@ fn main() {
             "--version" => {
                 println!();
                 return;
-            }
+            },
+            _ => ()
         }
     }
 
