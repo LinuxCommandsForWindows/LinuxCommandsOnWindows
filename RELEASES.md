@@ -1,3 +1,22 @@
+# Linux Commands for Windows 0.1.5 (04-06-2021)
+
+The fifth release!
+
+Only the target `x86_64-pc-windows-msvc` is supported for the commands as of now.
+
+## Added Commands
+
+### [`pwd` 0.1.0](https://github.com/LinuxCommandsForWindows/LinuxCommandsOnWindows/tree/main/src/pwd)
+
+`pwd` is the `pwd` command from Linux ported over to Windows.
+
+`pwd` already exists as a PowerShell Help Command - however I'd like to include it because at the end of
+the day we are porting Linux commands over.
+
+You should rename the executable file to `pwd` before adding it to the environment variables or adding it to
+your PowerShell profile - if you're using PowerShell; so that you don't have to type `pwd-x86_64-pc-windows-msvc`
+when you want to use `pwd`!
+
 # Linux Commands for Windows 0.1.4 (01-06-2021)
 
 The fifth release!
