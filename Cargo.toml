@@ -5,11 +5,15 @@ edition = "2018"
 
 # command versions
 # man 0.1.1
+# pwd 0.1.0
 # whoami - 0.1.1
 # winfetch - 0.1.1
 
 [dependencies.chrono]
 version = "0.4.19"
+
+[dependencies.libc]
+version = "0.2.95"
 
 [dependencies.winapi]
 version = "0.3.9"
@@ -42,6 +46,10 @@ features = [
 [[bin]]
 name = "man"
 path = "src/man/bin/main.rs"
+
+[[bin]]
+name = "pwd"
+path = "src/pwd/bin/main.rs"
 
 [[bin]]
 name = "whoami"
