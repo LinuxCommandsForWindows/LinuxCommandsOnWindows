@@ -1,16 +1,21 @@
 use std::env;
 
+use linux_commands_on_windows::pwd::{
+    PWD_HELP_MESSAGE,
+    PWD_VERSION_MESSAGE
+};
+
 fn main() {
     let mut args = env::args();
 
     if let Some(arg) = args.nth(1) {
         match &*arg {
             "--help" => {
-                println!();
+                println!("{}", PWD_HELP_MESSAGE);
                 return;
             },
             "--version" => {
-                println!();
+                println!("{}", PWD_VERSION_MESSAGE);
                 return;
             },
             _ => ()
