@@ -21,6 +21,10 @@ fn main() {
             _ => ()
         }
     }
+    
+    let mut dir = env::current_dir().unwrap().to_str().unwrap().replace(":", "").replace(r"\", "/");
+    let drive_letter = dir.remove(0);
+    dir.insert(0, drive_letter.to_ascii_lowercase());
 
-    println!("/mnt/{}", env::current_dir().unwrap().to_str().unwrap().replace(":", "").replace(r"\", "/").to_ascii_lowercase());
+    println!("/mnt/{}", dir);
 }
