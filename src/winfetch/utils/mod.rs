@@ -50,7 +50,8 @@ pub fn GetWindowsASCIIArt() -> String {
  {}34m`'ccllllllllll  lllllllllllllllllll
  {}34m      `' \\\\*::  :ccllllllllllllllll
  {}34m                       ````''*::cll
- {}34m                                 ``",
+ {}34m                                 `` {}0m",
+        ANSI_ESCAPE_SEQUENCE,
         ANSI_ESCAPE_SEQUENCE,
         ANSI_ESCAPE_SEQUENCE,
         ANSI_ESCAPE_SEQUENCE,
