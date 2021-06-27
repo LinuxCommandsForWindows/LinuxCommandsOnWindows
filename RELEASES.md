@@ -1,3 +1,15 @@
+# Linux Commands for Windows 0.1.6 (27-06-2021)
+
+The seventh release!
+
+Only the target `x86_64-pc-windows-msvc` is supported as of now.
+
+## Updated Commands
+
+### [`winfetch` 0.1.2](https://github.com/LinuxCommandsForWindows/LinuxCommandsOnWindows/tree/main/src/winfetch)
+
+Added a missing ANSI reset to the ASCII Art Image.
+
 # Linux Commands for Windows 0.1.5 (04-06-2021)
 
 The sixth release!
@@ -25,7 +37,7 @@ Only the target `x86_64-pc-windows-msvc` is supported for the commands as of now
 
 ## Updated Commands
 
-### [`winfetch` 0.1.1](https://github.com/LinuxCommandsForWindows/LinuxCommandsOnWindows/tree/main/src/man)
+### [`winfetch` 0.1.1](https://github.com/LinuxCommandsForWindows/LinuxCommandsOnWindows/tree/main/src/winfetch)
 
 Fixes an incorrect unit conversion bug.
 
